@@ -12,7 +12,7 @@ Testing with calling c++ in python. Using ctypes and pybind11.
 # pybind11.
   To compile the c++ program for pybind and make the shared file (Also already in the repo) you would run the command
   
-      g++ -O3 -Wall -shared -std=c++11 -fPIC `python3 -m pybind11 --includes` example.cpp -o example`python3-config --extension-suffix` -I<python_include_dir> -L<python_lib_dir>            -lpython<python_version>
+      g++ -O3 -Wall -shared -std=c++11 -fPIC `python3 -m pybind11 --includes` example.cpp -o example`python3-config --extension-suffix` -I<python_include_dir> -L<python_lib_dir> -lpython<python_version>
 
   
   for <python_include_dir> and <python_lib_dir> you most provide the corrent paths. To do this you can type.
