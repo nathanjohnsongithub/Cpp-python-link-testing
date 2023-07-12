@@ -21,7 +21,7 @@ Testing with calling c++ in python. Using ctypes and pybind11.
   
   for <python_include_dir>  and
   
-      python3-config --ldflags | awk -F '-L' '{print $2}''''
+      python3-config --ldflags | awk -F '-L' '{print $2}'
   
   for <python_lib_dir>.
 
