@@ -1,0 +1,23 @@
+How to run the class_tester.cpp
+
+you can just type
+#
+./class_tester
+#
+
+To compile you run
+
+#
+g++ class_tester.cpp -o "class_tester" -I <python-include-dir> -lpython<python-version>
+#
+
+to get your python-include-dir you can run
+# 
+python3 -c "import sysconfig; print(sysconfig.get_paths()['include'])"    
+#
+
+and for <python-version> you just need the version of python you're running on
+ex.
+#
+-lpython3.10
+#

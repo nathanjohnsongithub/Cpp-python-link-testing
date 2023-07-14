@@ -1,0 +1,21 @@
+To complile the c code and make a shared library you need to run the command 
+
+#
+gcc calculator.c -shared -o calculator.so -I<python-include-path> -I<numpy-include-path> -fPIC
+#
+
+to get the python include path you can run
+#
+python3 -c "import sysconfig; print(sysconfig.get_paths()['include'])"    
+#
+
+to get the numpy include path you can run these commands in order
+
+#
+python
+import numpy
+numpy.get_include()
+#
+and copy what numpy.get_include() prints out
+
+after you have the shared library you can just run the python program as normal
