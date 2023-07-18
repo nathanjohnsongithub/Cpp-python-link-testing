@@ -7,8 +7,6 @@ extern "C" {
         vector<int> v1(vec1, vec1 + size);
         vector<int> v2(vec2, vec2 + size);
 
-        vector<int> v(size, 0);
-
         vector<vector<int>> sum(size, vector<int>(size));
 
         for (int i = 0; i < v1.size(); ++i) {
